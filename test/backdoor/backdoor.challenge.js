@@ -46,7 +46,7 @@ describe("[Challenge] Backdoor", function () {
   });
 
   it("Exploit", async function () {
-    /** CODE YOUR EXPLOIT HERE */
+    /** CODE YOUR EXPLOIT HERE  */
     this.attackContract = await (
       await ethers.getContractFactory("BackdoorAttacker", attacker)
     ).deploy(
